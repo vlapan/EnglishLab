@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://google-web-toolkit.googlecode.com/files/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+	<g:DockLayoutPanel ui:field='panel'>
+		<g:west size='50'>
+			<g:VerticalPanel width='100%'>
+				<g:Label ui:field='correctCounter' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+				<g:Label ui:field='correctRateWidget' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+			</g:VerticalPanel>
+		</g:west>
+		<g:east size='50'>
+			<g:VerticalPanel width='100%' horizontalAlignment='ALIGN_CENTER'>
+				<g:Label ui:field='mistakeCounter' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+				<g:Label ui:field='mistakeRateWidget' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+			</g:VerticalPanel>
+		</g:east>
+		<g:north size='50'>
+			<g:VerticalPanel width='100%'>
+				<g:Label ui:field='questionWidget' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+				<g:Label ui:field='currentFormWidget' width='100%'
+					horizontalAlignment='ALIGN_CENTER' />
+			</g:VerticalPanel>
+		</g:north>
+		<g:center>
+			<g:HTMLPanel>
+				<div style='text-align:center'>
+					<g:TextBox width='95%' ui:field='inputWidget' />
+					<g:Label width='100%' horizontalAlignment='ALIGN_CENTER'
+						ui:field='correctWidget' />
+				</div>
+			</g:HTMLPanel>
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder>
